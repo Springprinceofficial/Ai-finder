@@ -1,0 +1,45 @@
+body {
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+section {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hidden { display:none; }
+
+h1 {
+    font-size:3rem;
+}
+
+button {
+    padding:10px 20px;
+    margin-top:15px;
+    background:cyan;
+    border:none;
+    cursor:pointer;
+}
+
+.card {
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+}
+
+input {
+    display:block;
+    margin:10px;
+    padding:10px;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+}

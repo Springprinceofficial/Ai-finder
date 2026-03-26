@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Truth Detector</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section id="landing">
+    <h1>AI Truth Detector</h1>
+    <p>Detect AI-generated images & videos instantly</p>
+    <button onclick="showAuth()">Let's Find</button>
+</section>
+
+<section id="auth" class="hidden">
+    <div class="card">
+        <h2 id="authTitle">Login</h2>
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="submitAuth()">Continue</button>
+        <p onclick="toggleAuth()">Switch</p>
+    </div>
+</section>
+
+<section id="dashboard" class="hidden">
+    <header>
+        <h2>Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <div class="upload">
+        <input type="file" id="file">
+        <button onclick="upload()">Analyze</button>
+    </div>
+
+    <div id="result"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
